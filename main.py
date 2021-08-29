@@ -1,27 +1,14 @@
-# "TODO: add doc strings as well as formatting. Make sure pull requests are working"
-"""Here is a general doc string. I need to make sure my python file is updated with some
-of the info that tkinter needs. I want better documentation to help me better understand
-what is going on"""
+from tkinter import *
+root = Tk()
 
-import tkinter as tk
+root.geometry('300x500')
+root.title("Lable test title")
 
-root = tk.Tk()
-
-e = tk.Entry(root, width=50)
-e.pack()
-
-e2 = tk.Entry(root, width=75)
-e2.pack()
-
-bs_label = tk.Label(root, text="this is the bs label")
+# show a label below
+bs_label = Label(root, 
+    text="This is a label", 
+    font=("Helvetica", 15))
 bs_label.pack()
 
-def my_click():
-    msg = "Hello " + e.get()
-    test_label = tk.Label(root, text= msg)
-    test_label.pack()
-
-button  = tk.Button(root, text="enter your name", command=my_click)
-button.pack()
 
 root.mainloop()
