@@ -7,8 +7,8 @@ import tkinter as tk
 
 root = tk.Tk()
 
-e = tk.Entry(root, width=50)
-e.pack()
+test = tk.Entry(root, width=50)
+test.pack()
 
 e2 = tk.Entry(root, width=75)
 e2.pack()
@@ -17,7 +17,7 @@ bs_label = tk.Label(root, text="this is the bs label")
 bs_label.pack()
 
 def my_click():
-    msg = "Hello " + e.get()
+    msg = "Hello " + test.get()
     test_label = tk.Label(root, text= msg)
     test_label.pack()
 
