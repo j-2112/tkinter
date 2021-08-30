@@ -1,9 +1,8 @@
-# "TODO: add doc strings as well as formatting. Make sure pull requests are working"
-"""Here is a general doc string. I need to make sure my python file is updated with some
-of the info that tkinter needs. I want better documentation to help me better understand
-what is going on"""
+from tkinter import *
+root = Tk()
 
-import tkinter as tk
+root.geometry('300x500')
+root.title("Lable test title")
 
 root = tk.Tk()
 
