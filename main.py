@@ -1,5 +1,5 @@
-from tkinter import *
-root = Tk()
+import tkinter as tk
+root = tk.Tk()
 
 root.geometry('300x500')
 root.title("Lable test title")
